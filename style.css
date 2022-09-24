@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: #ECECEC;
+} */
+.container::before{
+    content: "";
+    background-image: url("./Assets/Flixia-bg.jpg") ;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+.navbar{
+    height: 100px;
+    display: flex;
+}
+.logo{
+    height: 100%;
+    display: flex;
+    float: left;
+}
+.logo img{
+    height: 75px;
+    position: absolute;
+    left: 35px;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.sign-in{
+    height: 100px;
+    display: inherit;
+    float: right;
+    position: absolute;
+    right: 50px;
+}
+.sign-in button{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 7px 17px;
+    background-color: #13203C;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+.sign-in button a{
+    text-decoration: none;
+    color: #ececec;
+}
+.hero{
+    padding: 145px 45px;
+    width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    color: #13203C;    
+}
+.hero h1{ 
+    text-align: center;
+    font-size: 3.0rem;
+}
+.hero h2{
+    text-align: center;
+    font-size: 1.6rem;
+}
+.hero h3{
+    margin: 18px 0;
+}
+.hero .signup{
+    width: 1000px;
+    margin: auto;
+}
+.signup input{
+    height: 60px;
+    width: 450px;
+    margin: auto ;
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+    border:none;
+}
+.signup button{
+    margin: auto ;
+    height: 60px;
+    width: 150px;
+    align-items:center;
+    justify-content: center;
+    font-size: 20px;
+    background-color: #13203C;
+    cursor: pointer;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: none;
+    margin-left: -5px;
+}
+.signup button a{
+    text-decoration: none;
+    color: #ececec;
+}
