@@ -23,7 +23,7 @@
     z-index: -1;
 }
 .container{
-    overflow: hidden;
+    min-height: 100vh;
 }
 .navbar{
     height: 100px;
@@ -68,7 +68,6 @@
 }
 .hero{
     padding: 140px 45px;
-    width: 950px;
     margin: 0 auto;
     text-align: center;
     line-height: 1.5;
@@ -94,7 +93,7 @@
 }
 .signup input{
     height: 50px;
-    width: 450px;
+    max-width: 100%;
     margin: 0 auto ;
     padding: 20px;
     font-size: 20px;
@@ -152,17 +151,15 @@
 main{
     display: flex;
     justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
 }
-section{
-    margin:-10px 0px 30px;
-}
+
 section .texts{
 background-color: #13203C;
 color: #ececec;
 padding: 25px ;
 width: 100%;
-max-width: 300px;
-margin: 0px 15px ;
 height: 250px;
 }
 section .texts h1{
@@ -171,6 +168,14 @@ section .texts h1{
 section .texts h3{
     margin-top: 20px;
     font-weight: 400;
+}
+.footer-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
+    padding: 20px;
+    gap: 30px;
 }
 .footer-flex-container h3 {
     
@@ -214,13 +219,6 @@ section .texts h3{
     .text-center{
         text-align: left;
     }
-    .footer-flex-container {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        margin-bottom: 56px;
-        padding: 20px;
-    }
     }
 @media (max-width: 900px) {
     main{
@@ -231,3 +229,9 @@ section .texts h3{
         flex-direction: column;
     }
 }
+@media screen and (min-width:800px) {
+    section.text{
+        max-width: 300px;
+    }
+}
+
