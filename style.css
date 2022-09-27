@@ -230,7 +230,7 @@ section .texts h3{
     }
 }
 @media screen and (min-width:800px) {
-    section.text{
+    section .texts{
         max-width: 300px;
     }
 }
